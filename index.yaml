@@ -10,10 +10,10 @@ entries:
           image: ghcr.io/dexidp/dex:v2.35.3
     apiVersion: v2
     appVersion: 2.35.3
-    created: "2023-02-13T16:34:14.627581313Z"
+    created: "2023-02-13T16:44:35.31797391Z"
     description: OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable
       connectors.
-    digest: 4262d7b34d7c9e2976b9ec9d1129c247fdff292f3df5a4f19652328b24b1d1e5
+    digest: 813de7bb909c2bb81343a0e8c6677ebd9516715f5a28c21ef16be711c4b65221
     home: https://dexidp.io/
     icon: https://dexidp.io/favicon.png
     keywords:
@@ -32,8 +32,8 @@ entries:
     - https://github.com/dexidp/helm-charts/tree/master/charts/dex
     type: application
     urls:
-    - https://github.com/rwunderer/dex-helm-charts/releases/download/dex-0.14.1/dex-0.14.1.tgz
-    version: 0.14.1
+    - https://github.com/rwunderer/dex-helm-charts/releases/download/dex-0.14.2/dex-0.14.2.tgz
+    version: 0.14.2
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -1114,4 +1114,4 @@ entries:
     urls:
     - https://github.com/dexidp/helm-charts/releases/download/dex-0.0.6/dex-0.0.6.tgz
     version: 0.0.6
-generated: "2023-02-13T16:34:14.627865813Z"
+generated: "2023-02-13T16:44:35.318404632Z"
