@@ -10,6 +10,8 @@ on:
 jobs:
   charts:
     name: Charts
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
