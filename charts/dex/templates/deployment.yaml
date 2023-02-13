@@ -96,6 +96,8 @@ spec:
             httpGet:
               path: /healthz/live
               port: telemetry
+            failureThreshold: 60
+            periodSeconds: 5
           livenessProbe:
             httpGet:
               path: /healthz/live
