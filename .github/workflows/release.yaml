@@ -4,12 +4,15 @@ on:
   push:
     branches:
       - master
+      - startup_probe
     paths:
       - 'charts/**'
 
 jobs:
   charts:
     name: Charts
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
@@ -32,7 +35,6 @@ jobs:
         uses: helm/chart-releaser-action@v1.7.0
         with:
           charts_dir: charts
-          charts_repo_url: https://charts.dexidp.io
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_SKIP_EXISTING: true
@@ -54,4 +56,3 @@ jobs:
             fi
             helm push "${pkg}" "oci://ghcr.io/${GITHUB_REPOSITORY_OWNER}/helm-charts"
           done
-          
