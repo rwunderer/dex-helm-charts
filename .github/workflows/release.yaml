@@ -4,12 +4,15 @@ on:
   push:
     branches:
       - master
+      - startup_probe
     paths:
       - 'charts/**'
 
 jobs:
   charts:
     name: Charts
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
